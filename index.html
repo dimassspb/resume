@@ -10,68 +10,83 @@
         <title>Resume</title>
     </head>
     <body>
-        <img
-            src="2021-10-02 18-03-20_1633328751154.JPG"
-            alt="photo"
-            width="500"
-        />
-        <h1>Дмитрий Исаков</h1>
-        <hr />
-        <h2>Обо мне</h2>
-        <p>
-            Моя карьерная цель – развитие в сфере ИТ в области
-            <strong>Frontend</strong> разработки. Наличие практических навыков
-            разработки. Умение делать <em>простые формы фронтенда</em> при
-            помощи <strong>HTML, CSS</strong>. Возможность работать и в офисе, и
-            удаленно.
-        </p>
-        <h2>Список соцсетей:</h2>
-        <a href="https://t.me/Dimassspb01">Telegram</a>
-        <h2>Мои хобби:</h2>
-        <ul>
-            <li>Путешествия</li>
-            <li>Программирование</li>
-        </ul>
-        <h2>Опыт работы</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ООО "ЕвроСтройДизайн"</td>
-                    <td>Менеджер проектов</td>
-                    <td>2002 - н.в.</td>
-                </tr>
-            </tbody>
-        </table>
-        <br />
-        <h2>Связаться со мной</h2>
-        <form action="">
-            <div>
-                <label for="text">Ваше имя</label>
-                <input type="text" placeholder="Имя" id="text" />
+        <div class="container">
+            <div class="info">
+                <img
+                    class="image"
+                    src="avatar.JPG"
+                    alt="photo"
+                    width="500"
+                />
+                <div class="info-text">
+                    <h1>Дмитрий Исаков</h1>
+                    <hr />
+                    <h2>Обо мне</h2>
+                    <p class="text">
+                        Моя карьерная цель – развитие в сфере ИТ в области
+                        <strong>Frontend</strong> разработки. Наличие
+                        практических навыков разработки. Умение делать
+                        <em>простые формы фронтенда</em> при помощи
+                        <strong>HTML, CSS</strong>. Возможность работать и в
+                        офисе, и удаленно.
+                    </p>
+                    <h2>Список соцсетей</h2>
+                    <a href="https://t.me/Dimassspb01" class="text">Telegram</a>
+                </div>
             </div>
-            <div>
-                <label for="email">Ваш email</label>
-                <input type="email" placeholder="Email" id="email" />
+            <div class="card">
+                <h2>Мои хобби</h2>
+                <ul class="list">
+                    <li>Путешествия</li>
+                    <li>Программирование</li>
+                </ul>
             </div>
-            <div>
-                <label for="message">Ваше сообщение</label>
-                <br>
-                <textarea
-                    type="text"
-                    cols="30"
-                    rows="10"
-                    placeholder="Введите сообщение"
-                    id="message"
-                ></textarea>
+            <div class="card">
+                <h2>Опыт работы</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Должность</th>
+                            <th>Год</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ООО "ЕвроСтройДизайн"</td>
+                            <td>Менеджер проектов</td>
+                            <td>2002 - н.в.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br />
             </div>
-        </form>
-        <button type="submit">Отправить</button>
+            <form action="" class="form">
+                <h2>Связаться со мной:</h2>
+                <div class="form-row">
+                <div class="form-group">
+                    <label for="text">Ваше имя</label>
+                    <input type="text" placeholder="Имя" id="text" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" placeholder="Email" id="email" />
+                </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea
+                        type="text"
+                        cols="30"
+                        rows="10"
+                        placeholder="Введите сообщение"
+                        id="message"
+                    ></textarea>
+                </div>
+            </form>
+            <div class="btn-container">
+                <button type="submit" class="btn">Отправить</button>
+            </div>
+        </div>
     </body>
 </html>
